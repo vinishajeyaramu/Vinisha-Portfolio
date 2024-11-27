@@ -1,0 +1,35 @@
+.fun-props{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgb(123, 4, 123); */
+        padding: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid rgb(106, 113, 113);
+}
+.fun-props span{
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    border: 1px solid #F8B947;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+.facts-icon{
+    font-size: 50px;
+    color: #F8B947;
+}
+.fun-wordings{
+    /* background-color: aquamarine; */
+    font-size: 15px;
+    width: 85%;
+    color: aliceblue;
+    /* padding-left: 17px; */
+    margin-left: 8%;
+
+}

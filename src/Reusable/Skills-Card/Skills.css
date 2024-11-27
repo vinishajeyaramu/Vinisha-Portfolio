@@ -1,0 +1,31 @@
+.skill-props{
+    width: 100%;
+    padding: 20px;
+    /* background-color: aqua; */
+
+}
+.skill-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(106, 113, 113);
+    /* background-color: rgb(2, 44, 44); */
+    /* justify-content: space-between; */
+    gap: 10px;
+    color: aliceblue;
+    padding: 5px 0px;
+    
+}
+.skill-head span{
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    border: 1px solid #F8B947;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-icon{
+    font-size: 50px;
+    color: #F8B947;
+}
