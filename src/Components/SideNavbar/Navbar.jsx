@@ -180,12 +180,13 @@ const Navbar = () => {
             </div>
             <div className='cv-section'>
                <div className='cv-download cv-hover'><button onClick={toggleImageVisibility}>{isImageVisible} CV<PiReadCvLogoFill className='download-icon' /></button> 
-             
-                 
-             
-           </div>
-               <div className='cv-contact cv-hover' onClick={() => scrollToContact(contactref)}><button>Contact Me <FaTelegramPlane /></button></div>
+             </div>
+               <div className='cv-contact cv-hover' onClick={() => scrollToContact(contactref)} ><button>Contact Me <FaTelegramPlane /></button></div>
             </div>
+            <div className='image-background-1'></div>
+          <div className='img-scroll'>
+            <div className='imgs'></div>
+          </div>
           </div>
         </div>
         <div className='navright'>
