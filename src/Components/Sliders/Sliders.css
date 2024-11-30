@@ -1,9 +1,8 @@
+
 .slider{
     /* background-color: aquamarine; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height:100%;
     /* position: relative; */
 }
 .test-description{
@@ -15,6 +14,10 @@
     height: 50%;
 
 
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #f8b947;
 }
 .prof-img{
     display: flex;
@@ -34,6 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5px;
     /* background-color: blueviolet; */
     
 }

@@ -44,7 +44,9 @@ import workimg7 from "../../Assets/Images/work7.jpg"
 import workimg8 from "../../Assets/Images/work8.jpg"
 import { useRef } from 'react';
 import { RiMenu4Fill } from "react-icons/ri";
+import { MdOutlineClose } from "react-icons/md";
 import resume from '../../Assets/Images/Vinisha_Jeyaramu (1)_page-0001.jpg'
+
 
 
 const Navbar = () => {
@@ -119,10 +121,15 @@ const Navbar = () => {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+  
   const [isImageVisible, setIsImageVisible] = useState(false);
   
   const toggleImageVisibility = () => {
       setIsImageVisible(!isImageVisible);
+  }
+  const toggleImageInvisibility=()=>{
+    setIsImageVisible(false);
+
   }
   return (
     <>
@@ -151,11 +158,16 @@ const Navbar = () => {
               <div className='menu' onClick={()=>movedata(contactref)}><FaTelegramPlane className='nav-icon'/>Contact</div>
             </div>
           </div> 
-          <p className='image-background'></p>
-
+          <div className='image-background'>
+          </div>
+          <div className='img-scroll'>
+            <div className='imgs'></div>
+          </div>
+           
           <div className={open?"profile-overview1":'profile-overview'}>
             <div className='profile-image'>
             <img src={logo} alt="" />
+
             <p className='background-circle'/>
             <p className='name'>Vinisha Jeyaramu</p>
             <p className='posting'>Front-end Developer</p>
@@ -167,13 +179,10 @@ const Navbar = () => {
             </div>
             </div>
             <div className='cv-section'>
-               <div className='cv-download cv-hover'><button onClick={toggleImageVisibility}>{isImageVisible ?"CV": "CV"} <PiReadCvLogoFill className='download-icon' /></button> 
-                {isImageVisible && (
-                  <div className='resume-div'>
-                      <img src={resume} alt="" />
-                      <button onClick={toggleImageVisibility}>{isImageVisible ?"X": "X"}</button>
-                  </div>
-                )}
+               <div className='cv-download cv-hover'><button onClick={toggleImageVisibility}>{isImageVisible} CV<PiReadCvLogoFill className='download-icon' /></button> 
+             
+                 
+             
            </div>
                <div className='cv-contact cv-hover' onClick={() => scrollToContact(contactref)}><button>Contact Me <FaTelegramPlane /></button></div>
             </div>
@@ -540,8 +549,18 @@ const Navbar = () => {
         {submitted && <p className="success-message">Thank you for your message. It has been sent.</p>}
         </div>
             </form>
+            
            </div>
            
+           
+            </div>
+        
+             <div className={isImageVisible? "r-divs":'r-div'}>
+           <button  className="r-btn-cls" onClick={toggleImageVisibility} ><MdOutlineClose className='cls-icon'/></button>
+           <div className='r-div1'>
+           <img src={resume} alt="" className='resume-img'/>
+
+           </div>
             </div>
           
         </div>
